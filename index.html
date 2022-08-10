@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de captcha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="generate()">
+    <div class="wrapper"></div>
+    <h2 id="status" style="color: #ee7e6a;">Gerador de Captcha</h2>
+<div>
+    <input type="text" readonly id="generated-captcha">
+    </div>
+
+<div>
+    <input type="text" id="entered-captcha" placeholder="Enter the Captcha..">
+</div>
+<button type="button" onclick="check()">
+Checar
+</button>
+
+<button type="button" onclick="generate()" id="gen">
+Gerar novo Captcha
+</button>
+<script src="script.js"></script>
+</body>
+</html>
